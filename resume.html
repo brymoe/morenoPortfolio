@@ -1,0 +1,58 @@
+<!-- 
+	Bryan Moore Web Development
+
+	Custom Website for Gollo Moreno 
+
+	resume.html - Secondary Page
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Resume</title>
+
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="resume.css">  
+</head>
+
+<body>
+	<div class="mainblock">
+
+		<!-- SIDEBAR NAVIGATION -->
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html">Homepage</a>
+		  <a href="portfolio.html">Portfolio</a>
+		  <a href="resume.html">Resume</a>
+
+		  <div id="bottomlinks">
+		  	<p>@Bryan Moore Web Development</p>
+		  </div>
+		</div>
+		<span class ="openNav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+		<h2>RESUME</h2>
+
+		<div class="resumePdf">
+			<object width="400" height="570" data="resumeExample.pdf"></object>
+		</div>
+
+	</div>
+
+	<!-- JAVASCRIPT -->
+	<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+</body>
+</html>

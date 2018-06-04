@@ -1,0 +1,125 @@
+<!-- 
+	Bryan Moore Web Development
+
+	Custom Website for Gollo Moreno 
+
+	index.html - Main Landing Page
+-->
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<!-- CSS Links -->
+	<link rel="stylesheet" href="main.css">  
+  	<!-- AJAX -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<!-- Bootstrap -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+	<div class="mainblock">
+
+		<!-- SIDEBAR NAVIGATION -->
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html">Homepage</a>
+		  <a href="portfolio.html">Portfolio</a>
+		  <a href="resume.html">Resume</a>
+
+		  <div class="bottomlinks">
+		  	<p>@Bryan Moore Web Development</p>
+		  </div>
+		</div>
+		<span class ="openNav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+		<h2>&middot; GOLLO MORENO &middot;</h2>
+
+		<!-- TEXTBLOCK -->
+		<div class="textblock">
+			<p><span id="demo"></span></p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+				<div class="col-sm-4">
+				    <span id="logos"></span>
+				</div>
+				<div class="col-sm-4">
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Slider Bar -->
+		<div class="slidecontainer">
+		  	<input type="range" min="1" max="71" value="0" class="slider" id="myRange">
+
+		</div>
+		
+		<h4></h4>
+
+	</div>
+
+	<!-- JAVASCRIPT -->
+	<script>
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		var output2 = document.getElementById("logos");
+		output.innerHTML = "Hi. Gollo here. If you have landed here, either you’re a supportive friend or you’re interested in my work. The latter being exactly why I enlisted my coding wizard friend Bryan (picture of you) to help me showcase the work I’ve done as a part of some amazing teams over the years. So, let’s quit the riff raff and get to it. <br> <br> Click to slide along with me. ";
+
+		slider.oninput = function() {
+			if (this.value < 10){
+				output.innerHTML = "Think music makes the home? Me too. In fact, I’ve done <span style='color: red;'>PR</span> work for <span style='color: red;'>SONOS</span>. ";
+				output2.innerHTML = "";
+			} else if (this.value < 20) {
+				output.innerHTML = "Have a passion for the postal service? Me either, but I’ve helped USPS improve their <span style='color: red;'>social strategy</span>, through <span style='color: red;'>detailed engagement reports.</span>  photo of me photoshopped into a USPS uniform. ";
+				output2.innerHTML = "";
+			} else if (this.value < 30) {
+				output.innerHTML = "Into live music? I’ve helped organize and promote sold-out large-scale events with high profile artists like <span style='color: red;'>Big Wild, Yuna, Tokimonsta and Sol.</span> ";
+				output2.innerHTML = "";
+			} else if (this.value < 40) {
+				output.innerHTML = "State of politics have you down? Same. Which is why I made it a personal mission to <span style='color: red;'>break voter registration records at WWU.</span> ";
+				output2.innerHTML = "";
+			} else if (this.value < 50) {
+				output.innerHTML = "Passionate about all things <span style='color: red;'>cloud</span>? I currently service the Microsoft Azure account writing press releases and social content going out to thousands of customers. ";
+				output2.innerHTML = "";
+			} else if (this.value < 60) {
+				output.innerHTML = "Just want to hear a playlist of tunes that puts Spotify’s curation algorithm to shame? Yep, I have a sweet plug-in for that too. ";
+				output2.innerHTML = "";
+			} else if (this.value < 70) {
+				output.innerHTML = "Intrigued? Check out my portfolio <a href='portfolio.html'>here</a> and reach out.  Link to moving graphics of phone number, twitter, linkedin ";
+				output2.innerHTML = '<a href="https://www.facebook.com/gollo.moreno"><img src=\'icons/facebook.png\'></a><img src=\'icons/instagram.png\'><a href="https://twitter.com/asapgollo?lang=en"><img src=\'icons/twitter.png\'></a>';
+
+			}
+		  //output.innerHTML = this.value;
+		}
+
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!-- 
+	Bryan Moore Web Development
+
+	Custom Website for Gollo Moreno 
+
+	portfolio.html - Secondary Page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<!-- CSS Links -->
+	<link rel="stylesheet" href="portfolio.css">  
+  	<!-- AJAX -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<!-- Bootstrap -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+	<div class="mainblock">
+
+		<!-- SIDEBAR NAVIGATION -->
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html">Homepage</a>
+		  <a href="portfolio.html">Portfolio</a>
+		  <a href="resume.html">Resume</a>
+
+		  <div id="bottomlinks">
+		  	<p>@Bryan Moore Web Development</p>
+		  </div>
+		</div>
+		<span class ="openNav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+		<h2>&middot; PORTFOLIO &middot;</h2>
+
+		<div class="portfolioBlock">
+			<!-- Adidas Section-->
+			<div class="portfolioRow">
+				<div class="row">
+				    <!-- Left Side -->
+				    <div class="col-sm-4">
+				    	<a href="weberShandwick.html">
+					    	<img class="portfolioImage" src="portfolio/lawnstock-banner1.png">
+					    	<br>
+					    	<div class="portfolioHeadline2">
+					    		<p>Idea | Creative Direction | Executive Producer</p>
+					    	</div>
+					    	<div class="portfolioHeadline">
+					    		<h2>Weber Shandwick</h2>
+					    	</div>
+				    	</a>
+				    </div>
+				    <div class="col-sm-4">
+				    	<a href="asProductions.html">
+					    	<img class="portfolioImage" src="portfolio/moonlight.jpg">
+					    	<br>
+					    	<div class="portfolioHeadline2">
+					    		<p>Idea | Creative Direction | Executive Producer</p>
+					    	</div>
+					    	<div class="portfolioHeadline">
+					    		<h2>AS Productions</h2>
+					    	</div>
+					    </a>
+				    </div>
+				    <div class="col-sm-4">
+				    	<a href="wildBuffalo.html">
+					    	<img class="portfolioImage" src="portfolio/soundblock.png">
+					    	<br>
+					    	<div class="portfolioHeadline2">
+					    		<p>Idea | Creative Direction | Executive Producer</p>
+					    	</div>
+					    	<div class="portfolioHeadline">
+					    		<h2>Wild Buffalo </h2>
+					    	</div>
+					    </a>
+				    </div>
+				</div>
+			</div>
+			<div class="portfolioRow">
+				<div class="row">
+				    <!-- Left Side -->
+				    <div class="col-sm-2"></div>
+				    <div class="col-sm-4">
+				    	<a href="studentMarketing.html">
+					    	<img class="portfolioImage" src="portfolio/lawnstock-banner1.png">
+					    	<br>
+					    	<div class="portfolioHeadline2">
+					    		<p>Idea | Creative Direction | Executive Producer</p>
+					    	</div>
+					    	<div class="portfolioHeadline">
+					    		<h2>Student Marketing Association</h2>
+					    	</div>
+					    </a>
+				    </div>
+				    <div class="col-sm-4">
+				    	<a href="otherWork.html">
+					    	<img class="portfolioImage" src="portfolio/moonlight.jpg">
+					    	<br>
+					    	<div class="portfolioHeadline2">
+					    		<p>Idea | Creative Direction | Executive Producer</p>
+					    	</div>
+					    	<div class="portfolioHeadline">
+					    		<h2>Other Work</h2>
+					    	</div>
+					    </a>
+				    </div>
+				    <div class="col-sm-2"></div>
+				</div>
+			</div>
+
+		</div>
+
+	<!-- JAVASCRIPT -->
+	<script>
+
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+</body>
+</html>
