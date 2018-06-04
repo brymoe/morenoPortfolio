@@ -31,6 +31,12 @@ h4 {
 	font-family: adamPro;
 }
 
+a:hover {
+    cursor: crosshair;
+    color: inherit;
+    text-decoration: none;
+}
+
 
 .mainblock {
 	padding-top: 20px;
@@ -39,15 +45,17 @@ h4 {
 	padding-right: 50px;
 }
 
+/* Slider Text Area Styling */
 .textblock {
 	padding: 30px;
     padding-top: 100px;
-	height: 500px;
+	height: 520px;
     width: 100%;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
 }
 
+/* Height and padding for the logos, as well as transition times */
 .textblock img {
     height: 80px;
     padding-left: 20px;
@@ -55,15 +63,25 @@ h4 {
           transition:         transform .8s ease-in-out;
 }
 
+/* Spinning the logos on Hover */
 .textblock img:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
+/* Centering the Social Media Logos */
 #logos {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+
+/* Spotify Player Styling */
+.textblock iframe {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 /* SLIDER THINGS */
