@@ -53,6 +53,7 @@ a:hover {
     width: 100%;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
+    text-align: center;
 }
 
 /* Height and padding for the logos, as well as transition times */
@@ -72,10 +73,12 @@ a:hover {
 /* Centering the Social Media Logos */
 .textblock img {
     height: 200px;
+
 }
 
 #sol {
     float: right;
+
 }
 
 #bmoe {
