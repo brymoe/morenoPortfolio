@@ -56,7 +56,7 @@ a:hover {
 }
 
 /* Height and padding for the logos, as well as transition times */
-.textblock img {
+.textblock #logos img {
     height: 80px;
     padding-left: 20px;
     -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -67,6 +67,26 @@ a:hover {
 .textblock img:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+/* Centering the Social Media Logos */
+.textblock img {
+    height: 200px;
+}
+
+#sol {
+    float: right;
+}
+
+#bmoe {
+    float: right;
+    opacity: 0;
+    animation: fade 10s linear;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
 }
 
 /* Centering the Social Media Logos */
